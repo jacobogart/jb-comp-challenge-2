@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JB Static Comp 2</title>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <aside>
+      <img src="images/headshot.jpg" alt="User Headshot" id="user-headshot">
+      <h4>Jacob Bogart</h4>
+    <section class="side-main">
+      <h5>Main</h5>
+      <ul class="flex-row">
+        <li><img class="side-icon" src="images/home-icon.svg">Home</li>
+        <li><img class="side-icon" src="images/jobs-icon.svg">Jobs</li>
+        <li><img class="side-icon" src="images/resume-icon.svg">Resumes</li>
+        <li><img class="side-icon" src="images/tasks-icon.svg">Tasks</li>
+        <li><img class="side-icon" src="images/cal-icon.svg">Calendar</li>
+      </ul>
+    </section>
+    <section class="side-admin">
+      <h5>Admin</h5>
+      <ul class="flex-row">
+        <li><img class="side-icon" src="images/user-icon.png">Users</li>
+        <li><img class="side-icon" src="images/location-icon.png">Locations</li>
+        <li><img class="side-icon" src="images/workflow-icon.png">Workflows</li>
+        <li><img class="side-icon" src="images/news-icon.svg">Job Boards</li>
+        <li><img class="side-icon" src="images/social-icon.svg">Social</li>
+      </ul>
+    </section>
+    <section class="side-admin">
+      <h5>Categories</h5>
+      <ul class="flex-row checkbox-list">
+        <li><input type="checkbox" id="admin-check">Administrative</li>
+        <li><input type="checkbox" id="design-check">Design</li>
+        <li><input type="checkbox" id="exec-check">Executive</li>
+        <li><input type="checkbox" id="hr-check">Human Resources</li>
+      </ul>
+    </section>
+  </aside>
+  <main>
+    <nav>
+      <div class="nav-btn">
+        <img class="nav-icon" src="images/menu-icon.svg">
+      </div>
+      <div class="nav-search">
+        <img class="nav-icon" src="images/search-icon.svg">
+        <input type="text" id="search-bar" placeholder="Search for a job, task, or resume">
+      </div>
+      <div class="nav-btn">
+        <img class="nav-icon" src="images/add-icon.png">
+      </div>
+      <div class="nav-btn">
+        <img class="nav-icon" src="images/cal-add-icon.png">
+      </div>
+      <div class="nav-btn">
+        <img class="nav-icon" src="images/grid-icon.svg">
+      </div>
+    </nav>
+    <section class="main-top">
+      <div class="button-container">
+        <button class="main-button open-button"><img class="main-icon open-icon" src="images/green-dot-icon.png">OPEN</button>
+        <button class="main-button"><img class="main-icon" src="images/bookmark-icon.svg"></button>
+        <button class="main-button"><img class="main-icon" src="images/pencil-icon.svg"></button>
+        <button class="main-button"><img class="main-icon" src="images/trash-icon.svg"></button>
+      </div>
+      <h1>Customer Service Representative</h1>
+      <p><img class="main-icon" src="images/location-icon.png">San Fransisco, CA • <a href="">Preview this post</a></p>
+      <ul class="main-tabs">
+        <li>Summary</li>
+        <li>Applicants</li>
+        <li>Job Board</li>
+        <li>Interviews</li>
+        <li>Activity</li>
+        <li>Broadcast</li>
+        <li>Notifications</li>
+      </ul>
+    </section>
+    <section class="main-graphs">
+      <div class="circle-graph" id="graph1">
+        <div>
+          <h2>3,154</h2>
+          <p>Applicants</p>
+        </div>
+      </div>
+      <div class="circle-graph" id="graph2">
+        <div>
+          <h2>1,546</h2>
+          <p>Interviews</p>
+        </div>
+      </div>
+      <div class="circle-graph" id="graph3">
+        <div>
+          <h2>912</h2>
+          <p>Forwards</p>
+        </div>
+      </div>
+      <img class="graphs" src="images/graphs.png">
+    </section>
+    <div class="graph-btns">
+      <button class="main-button open-button" id="totals-btn">TOTALS • Out of <b>5,231</b> views</button>
+      <button class="main-button open-button" id="applicants-btn">APPLICANTS/DAY</button>
+    </div>
+    <section class="main-body">
+      <div class="table-holder"> 
+        <table>
+          <tr>
+            <th class="spacer-cell"></th>
+            <th class="left-cell" id="left-header">Job Description</th>
+            <th><button class="table-btn"><img class="table-icon" src="images/white-pencil-icon.png">EDIT</button></th>
+            <th class="spacer-cell"></th>
+          </tr>
+          <tr>
+            <td class="spacer-cell"></td>
+            <td class="left-cell">Position Title</td>
+            <td>Customer Service Representative</td>
+            <td class="spacer-cell"></td>
+          </tr>
+          <tr>
+            <td class="spacer-cell"></td>
+            <td class="left-cell">Location</td>
+            <td>San Fransisco, CA</td>
+            <td class="spacer-cell"></td>
+          </tr>
+          <tr>
+            <td class="spacer-cell"></td>
+            <td class="left-cell">Employment Type</td>
+            <td>Full-Time</td>
+            <td class="spacer-cell"></td>
+          </tr>
+          <tr>
+            <td class="spacer-cell"></td>
+            <td class="left-cell">Experience</td>
+            <td>Mid-Level</td>
+            <td class="spacer-cell"></td>
+          </tr>
+          <tr>
+            <td class="spacer-cell"></td>
+            <td class="left-cell">Status</td>
+            <td>Open</td>
+            <td class="spacer-cell"></td>
+          </tr>
+          <tr>
+            <td class="spacer-cell"></td>
+            <td class="left-cell">Descritption</td>
+            <td>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product sizzle; helping the bidness rescue customer service wait times while doing a back handspring and eating a ham sandwich.</td>
+            <td class="spacer-cell"></td>
+          </tr>
+          <tr>
+            <td class="spacer-cell"></td>
+            <td class="left-cell">Hiring Lead</td>
+            <td><img class="table-headshot" src="images/Meridith.png">Meridith Blake</td>
+            <td class="spacer-cell"></td>
+          </tr>
+          <tr>
+            <td class="spacer-cell"></td>
+            <td class="left-cell">Approved Salary</td>
+            <td><b>$58,000</b></td>
+            <td class="spacer-cell"></td>
+          </tr>
+        </table>
+      </div>  
+      <div class="social-holder">
+        <div class="button-holder">
+          <button class="social-btn facebook-btn"><img class="social-icon" src="images/facebook.svg">Post to Facebook</button>
+          <button class="social-btn twitter-btn"><img class="social-icon" src="images/twitter.svg">Tweet this Job</button>
+          <button class="social-btn linkedin-btn"><img class="social-icon" src="images/linkedin.svg">Post to Linkedin</button>
+        </div>
+        <div class="link-holder link-link">
+          <img class="social-icon" src="images/globe-icon.png">
+          <h6>Link to this Job</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <input type="text" placeholder="https://www.youtube.com/watch?v=PbjVCrCx">
+          <button class="link-btn">Copy</button>
+        </div>
+        <div class="link-holder widget-link">
+          <img class="social-icon" src="images/widget-icon.svg">
+          <h6>Use the Button Widget</h6>
+          <p>Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+          <input type="text" placeholder="https://www.youtube.com/watch?v=PbjVCrCx">
+          <button class="link-btn">Copy</button>
+        </div>
+        <div class="link-holder lh-bottom">
+          <img class="social-icon" src="images/airplane-icon.png">
+          <h6>Upload Resumes by Email</h6>
+          <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+          <input type="text" placeholder="https://www.youtube.com/watch?v=PbjVCrCx">
+          <button class="link-btn">Copy</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
